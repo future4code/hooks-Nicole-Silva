@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    background-color: palevioletred;
+    height: 50px;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+    color: black;
+}
+
+.grid.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    flex-wrap: wrap;
+    grid-gap: 1em;
+    grid-auto-rows: 200px;
+    margin: 20px;
+}
+
+.grid.item{
+    margin: 10px;
+}
+
+video{
+    width: 300px;
+    height: 200px;
+    padding-bottom: 20px;
+}
+
+footer{
+    display: flex;
+    background-color: pink;
+    height: 50px;
+    color: green;
+    align-items: center;
+    justify-content: center;
+}
