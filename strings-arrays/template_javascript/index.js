@@ -50,4 +50,3 @@
 //const tarefa3 = prompt("Digite uma útima tarefa para realizar no dia")
 //const listaDeTarefas = [tarefa1, tarefa2, tarefa3]
 //console.log[listaDeTarefas]
-
