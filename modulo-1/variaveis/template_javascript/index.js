@@ -49,7 +49,3 @@ b = c
 c = a
 console.log("O novo valor de a é: ", a)
 console.log("O novo valor de b é: ", b)*/
-
-
-
-
