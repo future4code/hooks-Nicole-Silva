@@ -1,27 +1,34 @@
-import React from "react";
-import TelaUsuario from "./Componentes/TelaUsuario";
+import React from 'react'
+import Cadastro from './Componentes/Cadastro';
+import Lista from './Componentes/Lista';
 
 class App extends React.Component {
   state = {
-    paginaInicial: "login"
-  };
-
-  mudarPagina = () => {
-    if (this.state.paginaAtual === "login") {
-      this.setState({ paginaAtual: "usuarios" });
-    } else {
-      this.setState({ paginaAtual: "login" });
-    }
-  };
-
-  render() {
-    return (
-      <div>
-        <button onClick={this.mudarPagina}>Mudar de página</button>
-        {this.state.paginaAtual === "login" ? <TelaUsuario /> : <usuarios />}
-      </div>
-    );
+    telaAtual: "cadastro"
   }
-}
+  irCadastro= () => {
+    this.setState({telaAtual: "cadastro"})
+  }
+  irLista= () => {
+    this.setState({telaAtual: "lista"})
+  }
 
-export default App;
+  escolhaTela= () => {
+    switch (this.state.telaAtual) {
+      case "cadastro":
+        return <Cadastro irLista={this.irLista}/>      
+      case "lista":
+        return <Lista irCadastro={this.irCadastro}/>
+      default:
+        return <p>Página não encontrada.</p>
+    }
+  }
+  render() {
+  return (
+    <div>
+      {this.escolhaTela()}
+      </div>
+  );
+}
+}
+export default App
