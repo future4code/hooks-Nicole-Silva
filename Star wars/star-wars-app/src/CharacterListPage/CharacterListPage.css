@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.Topo {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.Lista {
+    padding-left: 450px;
+    padding-right: 450px;
+}
+
+.Lista li {
+  border: 3px solid goldenrod;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 130%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    list-style-type: none
+}
