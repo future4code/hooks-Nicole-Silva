@@ -11,9 +11,6 @@ const Navbar = () => {
           className="navbar-img"
         />
       </div>
-      <div>
-        <button className="nav-btn">Trocar de tela</button>
-      </div>
     </nav>
   );
 };
