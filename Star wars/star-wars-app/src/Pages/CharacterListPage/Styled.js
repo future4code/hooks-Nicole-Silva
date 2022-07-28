@@ -12,6 +12,7 @@ export const CharacterCard = styled.div`
     cursor: pointer;
     background-color: black;
     color: white;
+    border: 5px solid black;
   }
 `;
 
