@@ -1,5 +1,8 @@
+import './App.css';
 import React from 'react';
-
+import {Etapa2} from "./Etapa2";
+import {Etapa3} from "./Etapa3";
+import {Final} from "./Final";
 class Etapa1 extends React.Component {
     
 render() {
